@@ -28,14 +28,26 @@
     -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popup.js"></script>
+  <script>
+    function eLeave(){
+      var oTakeLeave = document.getElementById("TakeLeave");
+      oTakeLeave.style.display = "";
+    }
+  </script>
 </head>
 
 <body>
-  <div id="app">
-    <h1>LabSys Extension</h1>
-    <div id="container">
-      
-    </div>
+  <h1>LabSys Extension</h1>
+  <div id="container">
+    <button id="btnLogin">登入</button>
+    <button id="btnTask">任務</button>
+    <button id="btnLeave" onclick="eLeave();">請假</button>
+    <button>通知</button>
+  </div>
+  <div id="TakeLeave" style="display:none;">
+    <span>請假原因</span>
+    <input type="text" name="txtLeave" />
+    <input type="submit" value="送出" />
   </div>
 </body>
 
