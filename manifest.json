@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "LabSys - 更好用的研究室專案協作平台",
+  "name": "CSS Editor",
   "description": "",
   "version": "1.0",
 	"homepage_url": "http://labsys.azurewebsites.net/",
@@ -9,7 +9,7 @@
   "browser_action": {
     "default_icon": "images/icon.png",
     "default_popup": "popup.html",
-    "default_title": "LabSys - 更好用的研究室專案協作平台"
+    "default_title": "CSS Editor"
   },
   
   "permissions": [

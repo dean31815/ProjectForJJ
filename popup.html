@@ -7,22 +7,8 @@
 <html>
 
 <head>
-  <title>LabSys - 更好用的研究室專案協作平台</title>
-  <style type="text/css">
-    body {
-      margin: 10px;
-      white-space: nowrap;
-      font-family: "微軟正黑體";
-    }
-    div {
-      overflow:hidden;
-    }
-    h1 {
-      font-size: 15px;
-    }
-    .f1{float:left;}
-  </style>
-
+  <title>CSS Editor</title>
+  
   <!--
       - JavaScript and HTML must be in separate files: see our Content Security
       - Policy documentation[1] for details and explanation.
@@ -31,31 +17,11 @@
     -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popup.js"></script>
-  <script>
-    function eLeave(){
-      var oTakeLeave = document.getElementById("TakeLeave");
-      oTakeLeave.style.display = "";
-    }
-  </script>
+  
 </head>
 
 <body>
-  <h1>研究室專案協作平台</h1>
-  <div id="containerL" class="f1" style="width:15%;">
-    <dl style="margin:0px;">
-        <dt><button id="btnLogin" style="width:100%;">登入</button></dt>
-        <dt><button id="btnTask">任務</button></dt>
-        <dt><button id="btnLeave" onclick="eLeave();">請假</button></dt>
-        <dt><button>通知</button></dt>
-    </dl>
-  </div>
-  <div id="containerR" class="f1" style="width:80%;margin-left:2%;">
-    <div id="TakeLeave" style="display:none;">
-      <span>請假原因</span>
-      <input type="text" name="txtLeave" />
-      <input type="submit" value="送出" />
-    </div>
-  </div>
+  
 </body>
 
 </html>
