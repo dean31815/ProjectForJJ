@@ -32,11 +32,23 @@ function changeFontColor(color) {
   });
 }
 
+function changeBackgroundColor(color) {
+  var script = 'document.body.style.backgroundColor="' + color + '";';
+  chrome.tabs.executeScript({
+    code: script
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   getCurrentTabUrl((url) => {
     var fontDropdown = document.getElementById('font-dropdown');
+    var bgColorDropdown = document.getElementById('bgColor-dropdown');
+
     fontDropdown.addEventListener('change', () => {
       changeFontColor(fontDropdown.value);
+    });
+    bgColorDropdown.addEventListener('change',() => {
+      changeBackgroundColor(bgColorDropdown.value);
     });
   });
 });
