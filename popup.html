@@ -13,11 +13,11 @@
       margin: 10px;
       white-space: nowrap;
     }
-  
+
     h1 {
       font-size: 15px;
     }
-  
+
     #container {
       align-items: center;
       display: flex;
@@ -32,14 +32,23 @@
     -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popup.js"></script>
-  
+
 </head>
 
 <body>
-  <h1>Background Color Changer</h1>
+  <h1>CSS Editor</h1>
   <div id="container">
-    <span>Choose a color</span>
+    <p>Choose a color</p>
     <select id="font-dropdown">
+      <option selected disabled hidden value=''></option>
+      <option value="white">White</option>
+      <option value="pink">Pink</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+    </select>
+
+    <p>Choose a backgroundcolor</p>
+    <select id="bgColor-dropdown">
       <option selected disabled hidden value=''></option>
       <option value="white">White</option>
       <option value="pink">Pink</option>
