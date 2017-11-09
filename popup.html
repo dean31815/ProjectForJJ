@@ -10,6 +10,7 @@
   <title>CSS Editor</title>
   <style type="text/css">
     body {
+      width: 250px;
       margin: 10px;
       white-space: nowrap;
     }
@@ -18,10 +19,11 @@
       font-size: 15px;
     }
 
-    #container {
+    .container {
       align-items: center;
       display: flex;
       justify-content: space-between;
+      margin: 5px;
     }
   </style>
   <!--
@@ -37,8 +39,8 @@
 
 <body>
   <h1>CSS Editor</h1>
-  <div id="container">
-    <p>Choose a color</p>
+  <div class="container">
+    <span>Choose a color</span>
     <select id="font-dropdown">
       <option selected disabled hidden value=''></option>
       <option value="white">White</option>
@@ -46,8 +48,9 @@
       <option value="green">Green</option>
       <option value="yellow">Yellow</option>
     </select>
-
-    <p>Choose a backgroundcolor</p>
+  </div>
+  <div class="container">
+    <span>Choose a backgroundcolor</span>
     <select id="bgColor-dropdown">
       <option selected disabled hidden value=''></option>
       <option value="white">White</option>
@@ -55,6 +58,13 @@
       <option value="green">Green</option>
       <option value="yellow">Yellow</option>
     </select>
+  </div>
+  <div>
+    <table>
+      <colgroup>
+        <col style="width" />
+      </colgroup>
+    </table>
   </div>
 </body>
 
